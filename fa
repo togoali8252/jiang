@@ -1,0 +1,11 @@
+ 1 #Filename:002.py
+ 2 i = int(raw_input('Enter the profit:'))
+ 3 arr = [1000000,600000,400000,200000,100000,0]
+ 4 rat = [0.01,0.015,0.03,0.05,0.075,0.1]
+ 5 r = 0
+ 6 for idx in range(0,6):
+ 7     if i>arr[idx]:
+ 8         r+=(i-arr[idx])*rat[idx]
+ 9         print (i-arr[idx])*rat[idx]
+10         i=arr[idx]
+11 print r
